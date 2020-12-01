@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/stylesheet.css">
+    <title>Randomizer</title>
+</head>
+<body>
+    <main>
+        <div class="container margin-sides">
+            <div class="list margin-sides" id="item-list">
+            </div>
+            <div class="input-group">
+                <div class="random-item">
+                    <input type="text" id="random-item" maxlength="25" readonly>
+                    <button type="button" id="btn-random-item">Get random item</button>
+                </div>
+                <div class="add-item">
+                    <input type="text" id="new-item" maxlength="25">
+                    <button type="button" id="btn-add-item">Add new item</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./views/randomizer.view.js"></script>
+    <script src="./services/randomizer.service.js"></script>
+    <script src="./controllers/randomizer.controller.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

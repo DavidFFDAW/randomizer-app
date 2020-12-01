@@ -1,0 +1,50 @@
+{
+  "name": "randomizer",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidFFDAW/randomizer-app.git"
+  },
+  "author": "David Fernández Flores",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidFFDAW/randomizer-app/issues"
+  },
+  "homepage": "https://github.com/DavidFFDAW/randomizer-app#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-angular": "^11.0.0",
+    "husky": "^4.3.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-html-autoprefixer": "0.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-purgecss": "^3.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-useref": "^5.0.0",
+    "gulp-watch": "^5.0.1",
+    "jasmine": "^3.6.2",
+    "karma": "^5.2.3",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-jasmine": "^4.0.1",
+    "prettier": "^2.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "npm test"
+    }
+  }
+}
