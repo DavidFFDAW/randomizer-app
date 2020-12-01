@@ -1,5 +1,3 @@
-const { get } = require("http");
-
 const regExps = {
     numbers: /[0-5][0-1]/,
     textOr: /(a|e|i)/,
